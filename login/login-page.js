@@ -1,17 +1,1 @@
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
-
-loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
-
-    if (username === "user" && password === "web_dev") {
-        alert("You have successfully logged in.");
-        window.location.replace("https://ssnob.github.io/panel");
-        location.reload();
-    } else {
-        loginErrorMsg.style.opacity = 1;
-    }
-})
+const _0x1bd5=['207677yQVxjM','login-form','1PygirM','user','You\x20have\x20successfully\x20logged\x20in.','11ujyDLH','preventDefault','getElementById','replace','385057XGIycz','login-error-msg','reload','password','13534HDradv','addEventListener','21059SRMYth','17bIIgLn','9uKtEgh','value','4sJknhs','login-form-submit','26926scqEcf','450227caFUnI','19547UbLPBE','username','15wMgnHc'];function _0x271a(_0x580b13,_0x4ad12a){return _0x271a=function(_0x1bd517,_0x271ad2){_0x1bd517=_0x1bd517-0x10d;let _0x5bdba3=_0x1bd5[_0x1bd517];return _0x5bdba3;},_0x271a(_0x580b13,_0x4ad12a);}const _0x1351a4=_0x271a;(function(_0x265f16,_0x469fc0){const _0x1835df=_0x271a;while(!![]){try{const _0x43538b=parseInt(_0x1835df(0x126))*parseInt(_0x1835df(0x123))+parseInt(_0x1835df(0x115))*parseInt(_0x1835df(0x111))+parseInt(_0x1835df(0x113))*parseInt(_0x1835df(0x11b))+parseInt(_0x1835df(0x112))+parseInt(_0x1835df(0x125))*parseInt(_0x1835df(0x10d))+parseInt(_0x1835df(0x118))*-parseInt(_0x1835df(0x11f))+-parseInt(_0x1835df(0x116))*parseInt(_0x1835df(0x10f));if(_0x43538b===_0x469fc0)break;else _0x265f16['push'](_0x265f16['shift']());}catch(_0x14a0b1){_0x265f16['push'](_0x265f16['shift']());}}}(_0x1bd5,0x42a52));const loginForm=document[_0x1351a4(0x11d)](_0x1351a4(0x117)),loginButton=document['getElementById'](_0x1351a4(0x110)),loginErrorMsg=document[_0x1351a4(0x11d)](_0x1351a4(0x120));loginButton[_0x1351a4(0x124)]('click',_0x1cf25d=>{const _0x26ef10=_0x1351a4;_0x1cf25d[_0x26ef10(0x11c)]();const _0x3e0916=loginForm[_0x26ef10(0x114)][_0x26ef10(0x10e)],_0x5a4059=loginForm[_0x26ef10(0x122)][_0x26ef10(0x10e)];_0x3e0916===_0x26ef10(0x119)&&_0x5a4059==='web_dev'?(alert(_0x26ef10(0x11a)),window['location'][_0x26ef10(0x11e)]('https://ssnob.github.io/panel'),location[_0x26ef10(0x121)]()):loginErrorMsg['style']['opacity']=0x1;});
