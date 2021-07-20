@@ -1,1 +1,17 @@
-const _0x2f56=['567018MgBdSQ','1VGwvBM','559741usUYUw','28QtzcmM','You\x20have\x20successfully\x20logged\x20in.','opacity','169397ekBwHt','login-error-msg','username','location','18iXzNhE','8798ZfPFpQ','280461LvNbgS','reload','getElementById','login-form','1881ZkjjfH','web_dev','1ckWARA','value','537gQDFaO','login-form-submit','click','913413oEiFNR'];const _0x4248c5=_0x31a7;(function(_0x50ea5c,_0x448046){const _0x2326a8=_0x31a7;while(!![]){try{const _0x37392b=-parseInt(_0x2326a8(0x143))*-parseInt(_0x2326a8(0x141))+-parseInt(_0x2326a8(0x135))*-parseInt(_0x2326a8(0x145))+parseInt(_0x2326a8(0x142))+-parseInt(_0x2326a8(0x13e))*-parseInt(_0x2326a8(0x13a))+parseInt(_0x2326a8(0x136))+-parseInt(_0x2326a8(0x144))*-parseInt(_0x2326a8(0x13c))+-parseInt(_0x2326a8(0x134))*parseInt(_0x2326a8(0x148));if(_0x37392b===_0x448046)break;else _0x50ea5c['push'](_0x50ea5c['shift']());}catch(_0x4d9b56){_0x50ea5c['push'](_0x50ea5c['shift']());}}}(_0x2f56,0x80e38));const loginForm=document[_0x4248c5(0x138)](_0x4248c5(0x139)),loginButton=document[_0x4248c5(0x138)](_0x4248c5(0x13f)),loginErrorMsg=document[_0x4248c5(0x138)](_0x4248c5(0x149));function _0x31a7(_0x4cbfb1,_0x2855d5){return _0x31a7=function(_0x2f56a5,_0x31a743){_0x2f56a5=_0x2f56a5-0x134;let _0x32c963=_0x2f56[_0x2f56a5];return _0x32c963;},_0x31a7(_0x4cbfb1,_0x2855d5);}loginButton['addEventListener'](_0x4248c5(0x140),_0x664dba=>{const _0x3ad354=_0x4248c5;_0x664dba['preventDefault']();const _0x497fbf=loginForm[_0x3ad354(0x14a)][_0x3ad354(0x13d)],_0x4af661=loginForm['password'][_0x3ad354(0x13d)];_0x497fbf==='user'&&_0x4af661===_0x3ad354(0x13b)?(alert(_0x3ad354(0x146)),window[_0x3ad354(0x14b)]['href']='https://ssnob.github.io/panel',location[_0x3ad354(0x137)]()):loginErrorMsg['style'][_0x3ad354(0x147)]=0x1;});
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+const loginErrorMsg = document.getElementById("login-error-msg");
+
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "user" && password === "web_dev") {
+        alert("You have successfully logged in.");
+        window.location = "http://new-website.com";
+        
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+})
