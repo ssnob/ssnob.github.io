@@ -1,18 +1,9 @@
-<html>
- <head><meta charset='utf-8'></head>
- <body>
-	<head>
-		<meta http-equiv="refresh" content="1; URL=https://ssnob.github.io" />
-		<head>
-			<title>Blistful</title>
-			<link rel="shortcut icon" type="image/png" href="/Assets/thanos.png">
-		</head>
-	</html>
-	</body>
-	</html>
-	  </head>
-	  <body>
-	  </body>
-  </script>
- </body>
-</html>
+Your file should start downloading in a few seconds. 
+If downloading doesn't start automatically
+<a id="downloadLink" href="assets/thanos.png">click here to get your file</a>.
+
+<script> 
+    var downloadTimeout = setTimeout(function () {
+        window.location = document.getElementById('downloadLink').href;
+    }, 450);
+</script>
