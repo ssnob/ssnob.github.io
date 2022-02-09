@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="description" content="Active." />
-		<link rel="stylesheet" href="src/styles.css" />
-		</head>
-		<style>
-			body {
-			  background-image: url('/Assets/Background.jpg');
-			}
-			</style>
-		<body>
-		  <style>
-		  h1 {
-			text-align: center;
-		  }
-		  
-		  /* Centering a shape, or other type of tag like a button: */
-		  /* a "." means that what you're changing is a class, "#" means what you're changing is an ID. You can set this in HTML with id="myID" and class="myClass" */
-		  .myClass {
-			/* First set a fixed width, could be a percentage (of the screen), or a precise pixel count */
-			width: 50%;
-		  
-			/* Now we'll use a margin to center it */
-			margin-left: auto;
-			margin-right: auto;
-		  }</style>
-		  <p id="version"> 
-			  0.0.1
-		  </p>
-		</body>
-	  </html>
+    <head>
+        <title>Ssnob - Github</title>
+        <link rel="icon" type="image/x-icon" href="/assets/icon.ico">
+        <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href="light/css/lightbox.css"/>
+        <script src="light/lightbox-plus-jquery.js"></script>
+    </head>
+
+    <body>
+        <div class ="container">
+            <div class ="menu">
+                <ul>
+                    <li class="logo"> <a href="https://ssnob.github.io"> <img src="assets/icon.png"> </a> </li>
+                    <li class="active"> Home</li>
+                    <li><a href="https://github.com/ssnob"> Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <style>
+        body {background-color:rgb(59, 58, 58);}
+        </style>
+            <div class="banner">
+                <div class="app-text">
+                    <h1>
+                        T7 Force Host
+                    </h1>
+                    <p>
+                        Black Ops 3 Multiplayer Force Host tool. Use this to set other players stats in multiplayer. 
+                    </p>
+                    <script>
+                        function forceSource() {
+                            window.open("https://github.com/ssnob/T7mpforcehost", "_blank");
+                        }
+                        function download() {
+                            window.open("https://github.com/ssnob/T7mpforcehost/releases/download/V1/Release.zip", "_blank");
+                        }
+                        function sleep(ms) {
+                            return new Promise(resolve => setTimeout(resolve, ms));
+                        }
+                    </script>
+                    <button class ="mainbutton" type="button" onclick="download()">Download</button>
+                    <button class ="mainbutton" type="button" onclick="forceSource()">Source Code</button>
+                    <button class ="mainbutton" type="button" </button> <a href="/assets/forcehost.png" data-lightbox="image-1" data-title="Preview">Preview</a></button>
+                </div>
+            </div>
+    </body>
+</html>
